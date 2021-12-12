@@ -110,13 +110,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _scone_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scone.png */ \"./src/scone.png\");\n\n\nfunction contentFunc () {\n\n    \n\n    const content = document.querySelector('#content');\n\n    const heading = document.createElement('div');\n    heading.setAttribute('id', 'head');\n    heading.innerHTML = \"<h1> Scone but not forgotten</h1>\";\n    content.appendChild(heading);\n\n    const sconeImg = new Image();\n    sconeImg.src = _scone_png__WEBPACK_IMPORTED_MODULE_0__;\n    sconeImg.setAttribute('class', 'scone');\n    content.appendChild(sconeImg);\n\n    const para = document.createElement('div');\n    para.setAttribute('id', 'para');\n    para.innerHTML = \"<p>Jam then cream? Or cream then Jam?\\nAre you a heathen, or a hero?</p>\";\n    content.appendChild(para);\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contentFunc);\n\n//# sourceURL=webpack://restaurant/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scone_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scone.png */ \"./src/scone.png\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n(function headerFunc() {\n\n    const header = document.querySelector('#header');\n    \n    const home = document.createElement('button');\n    home.setAttribute('class', 'home');\n    home.innerText = \"HOME\";\n    header.appendChild(home);\n\n    const recipe = document.createElement('button');\n    recipe.setAttribute('class', 'recipe');\n    recipe.innerText = \"RECIPE\";\n    header.appendChild(recipe);\n\n    const about = document.createElement('button');\n    about.setAttribute('class', 'about');\n    about.innerText = \"ABOUT\"\n    header.appendChild(about);\n})();\n\n\n(function contentFunc () {\n\n    \n\n    const content = document.querySelector('#content');\n\n    const heading = document.createElement('div');\n    heading.setAttribute('id', 'head');\n    heading.innerHTML = \"<h1> Scone but not forgotten</h1>\";\n    content.appendChild(heading);\n\n    const sconeImg = new Image();\n    sconeImg.src = _scone_png__WEBPACK_IMPORTED_MODULE_0__;\n    sconeImg.setAttribute('class', 'scone');\n    content.appendChild(sconeImg);\n\n    const para = document.createElement('div');\n    para.setAttribute('id', 'para');\n    para.innerHTML = \"<p>Jam then cream? Or cream then Jam?\\nAre you a heathen, or a hero?</p>\";\n    content.appendChild(para);\n\n})();\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\n\n(function headerFunc() {\n\n    const header = document.querySelector('#header');\n    \n    const home = document.createElement('button');\n    home.setAttribute('class', 'home');\n    home.innerText = \"HOME\";\n    header.appendChild(home);\n\n    const recipe = document.createElement('button');\n    recipe.setAttribute('class', 'recipe');\n    recipe.innerText = \"RECIPE\";\n    header.appendChild(recipe);\n\n    const about = document.createElement('button');\n    about.setAttribute('class', 'about');\n    about.innerText = \"ABOUT\"\n    header.appendChild(about);\n})();\n\n(0,_home_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
