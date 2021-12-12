@@ -19,7 +19,32 @@ import contentFunc from './home.js';
     about.setAttribute('class', 'about');
     about.innerText = "ABOUT"
     header.appendChild(about);
+
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach((button) => {
+        button.addEventListener('click', tabs)
+    });
 })();
+
+function tabs(e) {
+    
+    let choice = e.currentTarget.className;
+    
+    switch(choice){
+        case "home":
+            //send to home tab
+            break;
+        case "about":
+            //sent to about tab
+            break;
+        case "recipe":
+            //send to recipe tab
+            break;
+        default:
+            console.log("no choice");
+
+    }
+}
 
 contentFunc();
 
