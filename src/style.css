@@ -1,0 +1,14 @@
+body {
+    background: #F6C292;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scone {
+    width: 500px;
+    height: auto;
+}

@@ -12,6 +12,7 @@ import './style.css';
 
     const sconeImg = new Image();
     sconeImg.src = Icon;
+    sconeImg.setAttribute('class', 'scone');
     content.appendChild(sconeImg);
 
     const para = document.createElement('div');
