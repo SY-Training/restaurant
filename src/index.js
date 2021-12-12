@@ -1,5 +1,7 @@
 import './style.css';
 import contentFunc from './home.js';
+import AboutPage from './about.js';
+import RecipePage from './recipe.js';
 
 (function headerFunc() {
 
@@ -24,21 +26,28 @@ import contentFunc from './home.js';
     buttons.forEach((button) => {
         button.addEventListener('click', tabs)
     });
+
+    return header;
 })();
 
 function tabs(e) {
     
     let choice = e.currentTarget.className;
-    
+
+    const content = document.querySelector('#content');
+    while (content.firstChild){
+        content.removeChild(content.lastChild);
+    }
+
     switch(choice){
         case "home":
-            //send to home tab
+            contentFunc();
             break;
         case "about":
-            //sent to about tab
+            AboutPage();
             break;
         case "recipe":
-            //send to recipe tab
+            RecipePage();
             break;
         default:
             console.log("no choice");

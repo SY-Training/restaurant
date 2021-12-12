@@ -18,7 +18,7 @@ function contentFunc () {
 
     const para = document.createElement('div');
     para.setAttribute('id', 'para');
-    para.innerHTML = "<p>Jam then cream? Or cream then Jam?\nAre you a heathen, or a hero?</p>";
+    para.innerHTML = "<p>Jam then cream? Or cream then Jam?<br>Are you a heathen, or a hero?</p>";
     content.appendChild(para);
 
 }
